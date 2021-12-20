@@ -5,7 +5,7 @@ import { DragDropType } from '../models';
 @Component({
   selector: 'formly-designer-types',
   template: `
-    <div *ngFor="let type of types" draggable="true" (dragstart)="onDragStart($event, type.value)" (dragend)="onDragEnd()">
+    <div class="d-control" *ngFor="let type of types" draggable="true" (dragstart)="onDragStart($event, type.value)" (dragend)="onDragEnd()">
       {{ type.label }}
     </div>
   `,

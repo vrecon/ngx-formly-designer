@@ -16,10 +16,10 @@ const FIELD_EDITOR_CONTROL_VALUE_ACCESSOR: any = {
   selector: 'formly-designer-field-editor',
   template: `
     <form [formGroup]="form" novalidate>
-      <div class="card">
+      <div class="card card-d-editor">
         <div class="card-header" [ngClass]="{solo: !hasContent && fields.length === 0}">
           <div class="form-group">
-            <label class="form-control-label">key</label>
+            <label class="form-control-label">name</label>
             <input formControlName="key" class="form-control">
           </div>
           <div *ngIf="formlyDesignerConfig.settings.showClassName" class="form-group">
